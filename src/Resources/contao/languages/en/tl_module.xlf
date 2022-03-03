@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file datatype="php" original="src/Resources/contao/languages/en/tl_module.php" source-language="en">
+<body>
+    <!-- FIELDS -->
+    <trans-unit id="tl_module.pp_password.0">
+        <source>Passwort</source>
+    </trans-unit>
+    <trans-unit id="tl_module.pp_password.1">
+        <source>Bitte vergeben Sie ein Passwort mit dem der Nutzer eingeloggt wird.</source>
+    </trans-unit>
+</body>
+</file>
+</xliff>

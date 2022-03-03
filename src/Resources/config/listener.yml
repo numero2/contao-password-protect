@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        public: true
+
+    numero2_password_protect.listener.data_container.article:
+        class: numero2\PasswordProtectBundle\EventListener\DataContainer\ArticleListener
+        arguments:
+            - '@translator'
+
+    numero2_password_protect.listener.hooks.article:
+        class: numero2\PasswordProtectBundle\EventListener\Hooks\ArticleListener
+        arguments:
+            - '@contao.framework'
+            - '@contao.csrf.token_manager'
+            - '@security.password_hasher_factory'
+            - '@request_stack'

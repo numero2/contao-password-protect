@@ -1,0 +1,11 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+    <form class="" action="<?= $this->action; ?>" method="post">
+        <div class="formbody">
+            <?php foreach( $this->widgets as $key => $widget ): ?>
+                <?= $widget; ?>
+            <?php endforeach; ?>
+        </div>
+    </form>
+<?php $this->endblock(); ?>

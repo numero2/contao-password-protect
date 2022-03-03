@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    numero2_password_protect.security.password_protect_voter:
+        class: numero2\PasswordProtectBundle\Security\Voter\PasswordProtectVoter
+        arguments:
+            - '@contao.security.member_group_voter'
+            - '@request_stack'
+        tags:
+            - { name: security.voter, priority: 10 }
+
+    numero2\PasswordProtectBundle\Controller\FrontendModule\PasswordProtectLoginController:
+        arguments:
+            - '@request_stack'
+            - '@security.password_hasher_factory'
+            - '@contao.csrf.token_manager'
+            - '@contao.translation.translator'

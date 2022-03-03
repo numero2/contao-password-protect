@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en">
+<body>
+    <!-- MISCELLANEOUS -->
+    <trans-unit id="MSC.password_protected">
+        <source>Passwort geschützt</source>
+    </trans-unit>
+    <trans-unit id="MSC.password_protected_login.invalid_password">
+        <source>Ungültiges Passwort!</source>
+    </trans-unit>
+    <trans-unit id="MSC.password_protected_login.password">
+        <source>Kennwort</source>
+    </trans-unit>
+    <trans-unit id="MSC.password_protected_login.submit">
+        <source>Login</source>
+    </trans-unit>
+</body>
+</file>
+</xliff>

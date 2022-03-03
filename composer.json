@@ -1,0 +1,27 @@
+{
+    "name": "numero2/contao-password-protect",
+    "type": "contao-bundle",
+    "description": "Simple password protection for individual pages",
+    "license": "LGPL-3.0+",
+    "require": {
+        "contao/core-bundle": "^4.13"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "numero2\\PasswordProtectBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "numero2\\PasswordProtectBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ]
+    }
+}
